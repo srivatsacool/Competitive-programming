@@ -10,9 +10,10 @@ int main()
     for (int i = 0 ; i<tt ; i++){
         int a ,b , c;
         cin >> a >> b >> c;
-        a++;
-        if(a*c >= b)cout<<"YES"<<endl;
-        else cout<<"NO"<<endl;
+        int marks = b*3;
+        marks = marks + ((a-b)*-1);
+        if(marks>=c)cout<<"PASS"<<endl;
+        else cout<<"FAIL"<<endl;
 
     }
     return 0;
